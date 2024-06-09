@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Results: </h1>
+    <p>{{n}} Results retrieved in {{dur}} seconds</p>
+    {% for i in range(n) %}
+        <h2>{{i + 1}} - {{ data[i][0] }}</h2>
+        <p>{{ data[i][1] }}</p>
+    {% endfor %}
+</body>
+</html>

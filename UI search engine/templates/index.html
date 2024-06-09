@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simple Search Engine</title>
+        <style>
+            body {
+                width: 100vw;
+                height: 100vh;
+                box-sizing: border-box;
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            button {
+                color: white;
+                background-color: #3b90ff;
+                border: none;
+                border-radius: 5px;
+                margin-left: 5px;
+                width: 120px;
+                height: 40px;
+            }
+            input {
+                border-radius: 5px;
+                margin-right: 5px;
+                width: 200px;
+                height: 30px;
+            }
+            button:hover {
+                background-color: #1a6cd9;
+                transition: 0.5s;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <form method="post">
+            <input type="text" name="query" placeholder="What do you think about?...", autofocus>
+            <button type="submit"> Search </button>
+        </form>
+    </body>
+</html>
